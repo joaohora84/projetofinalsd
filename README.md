@@ -1,2 +1,109 @@
-# projetofinalsd
-Projeto final Sistemas distribuidos
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página de Exemplo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Projeto Final - Sistema Distribuidos</h1>
+        <h3>Servidor REST utilizando API REST-RS</h3>
+
+
+        <ul>
+
+            <li>
+                <p>Consultar veículo por cidade, modelo e faixa de preço</p>
+                <a href="api/veiculo/busca1?cidade=Baixo Guandu&modelo=classic&preco_inicial=15000.0&preco_final=50000.0">
+                    localhost:8080/server/api/veiculo/busca1?cidade=Baixo Guandu&modelo=classic&preco_inicial=15000.0&preco_final=50000.0
+                    <a/>
+
+            </li>
+
+
+            <li>
+                <p>consultar veículo por cidade, faixa de preço, ar condicional e tipo de câmbio</p>
+                <a href="api/veiculo/busca2?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual">
+                    localhost:8080/server/api/veiculo/busca2?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual
+                    <a/>
+
+            </li>
+
+            <li>
+                <p>Consultar veículo por cidade, faixa de preço, ar condicional, tipo de câmbio e combustível</p>
+                <a href="api/veiculo/busca3?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual&combustivel=gasolina">
+                    localhost:8080/server/api/veiculo/busca3?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual&combustivel=gasolina
+                    <a/>
+
+            </li>
+
+            <li>
+                <p>
+                    Cadastrar reserva de veiculo 
+                </p>
+                </p>
+                <a href="api/reserva">
+                    localhost:8080/server/api/reserva
+                </a>
+                <p>Usar o verbo HTTP: <b>POST</b> e no corpo enviar o JSON com dados da reserva.</p>
+                <p>
+                    {
+                    "id": 4,
+                    "data_fim": "20/12/2021",
+                    "data_inicio": "20/12/2021",
+                    "valor": 100.0,    
+                    "locadora": {
+                    "id": 2,
+                    },
+
+                    "veiculo": {
+                    "id": 11,
+                    },
+                    "cidade": {
+                    "id": 2,
+                    }  
+
+                    }
+
+            </li>
+
+            <li>
+                <p>Alterar reserva de veículo</p>
+                <a href="api/reserva">
+                    localhost:8080/server/api/reserva
+                    <a/>
+                    <p>Usar o verbo HTTP: <b>PUT</b> e no corpo enviar o JSON com dados que deseja alterar na reserva.</p>
+                    <p>
+                        {
+                        "id": 4,
+                        "data_fim": "20/12/2021",
+                        "data_inicio": "20/12/2021",
+                        "valor": 100.0,    
+                        "locadora": {
+                        "id": 2,
+                        },
+
+                        "veiculo": {
+                        "id": 11,
+                        },
+                        "cidade": {
+                        "id": 2,
+                        }  
+
+                        }
+                        </li>
+                    <li>
+                        <p>
+                            Excluir reserva de veículo 
+                        </p>
+                        <p>
+                            Usar o verbo HTTP: <b>DELETE</b> enviando o ID no fim do END POINT.
+                        </p>
+                        <a href="api/reserva/4">
+                            localhost:8080/server/api/reserva/4
+                        </a>
+                    </li>
+        </ul>
+    </p>
+</body>
+</html>
