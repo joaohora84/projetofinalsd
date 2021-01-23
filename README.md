@@ -44,9 +44,9 @@ Página de Exemplo
             
        Alterar reserva de veículo
                 api/reserva
-                    localhost:8080/server/api/reserva
+                localhost:8080/server/api/reserva
                     
-                    Usar o verbo HTTP: <b>PUT</b> e no corpo enviar o JSON com dados que deseja alterar na reserva.
+                Usar o verbo HTTP: <b>PUT</b> e no corpo enviar o JSON com dados que deseja alterar na reserva.
                     
                         {
                         "id": 4,
@@ -68,9 +68,11 @@ Página de Exemplo
                         
                    
         Excluir reserva de veículo 
+        
+                api/reserva/4
+                localhost:8080/server/api/reserva/4
                        
-                        Usar o verbo HTTP: <b>DELETE</b> enviando o ID no fim do END POINT.
+                Usar o verbo HTTP: <b>DELETE</b> enviando o ID no fim do END POINT.
                        
-                        api/reserva/4
-                        localhost:8080/server/api/reserva/4
+                
                        
