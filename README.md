@@ -26,24 +26,20 @@
                
 Usar o verbo HTTP: **POST** e no corpo enviar o JSON com dados da reserva. Aqui não precisa informa o ID, o mesmo é gerado em série.
                 
-                    {
-                    "data_fim": "20/12/2021",
-                    "data_inicio": "20/12/2021",
-                    "valor": 100.0,    
-                    "locadora": {
-                    "id": 2,
-                    },
-
-                    "veiculo": {
-                    "id": 11,
-                    },
-                    "cidade": {
-                    "id": 2,
-                    }  
-
-                    }
-
-            
+{
+  "data_fim": "20/12/2021",
+  "data_inicio": "20/12/2021",
+  "valor": 100.0,    
+  "locadora": {
+    "id": 2,
+  },
+  "veiculo": {
+    "id": 11,
+    },
+  "cidade": {
+    "id": 2,
+    }  
+}
 
             
 5. **Alterar reserva de veículo**
