@@ -1,52 +1,26 @@
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Página de Exemplo</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-        <h1>Projeto Final - Sistema Distribuidos</h1>
-        <h3>Servidor REST utilizando API REST-RS</h3>
+Página de Exemplo
+       Projeto Final - Sistema Distribuidos
+       Servidor REST utilizando API REST-RS
 
 
-        <ul>
-
-            <li>
-                <p>Consultar veículo por cidade, modelo e faixa de preço</p>
-                <a href="api/veiculo/busca1?cidade=Baixo Guandu&modelo=classic&preco_inicial=15000.0&preco_final=50000.0">
-                    localhost:8080/server/api/veiculo/busca1?cidade=Baixo Guandu&modelo=classic&preco_inicial=15000.0&preco_final=50000.0
-                    <a/>
-
-            </li>
-
-
-            <li>
-                <p>consultar veículo por cidade, faixa de preço, ar condicional e tipo de câmbio</p>
-                <a href="api/veiculo/busca2?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual">
-                    localhost:8080/server/api/veiculo/busca2?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual
-                    <a/>
-
-            </li>
-
-            <li>
-                <p>Consultar veículo por cidade, faixa de preço, ar condicional, tipo de câmbio e combustível</p>
-                <a href="api/veiculo/busca3?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual&combustivel=gasolina">
-                    localhost:8080/server/api/veiculo/busca3?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual&combustivel=gasolina
-                    <a/>
-
-            </li>
-
-            <li>
-                <p>
-                    Cadastrar reserva de veiculo 
-                </p>
-                </p>
-                <a href="api/reserva">
-                    localhost:8080/server/api/reserva
-                </a>
-                <p>Usar o verbo HTTP: <b>POST</b> e no corpo enviar o JSON com dados da reserva.</p>
-                <p>
+       Consultar veículo por cidade, modelo e faixa de preço
+                api/veiculo/busca1?cidade=Baixo Guandu&modelo=classic&preco_inicial=15000.0&preco_final=50000.0"
+                localhost:8080/server/api/veiculo/busca1?cidade=Baixo Guandu&modelo=classic&preco_inicial=15000.0&preco_final=50000.0
+                    
+       consultar veículo por cidade, faixa de preço, ar condicional e tipo de câmbio
+                api/veiculo/busca2?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual
+                localhost:8080/server/api/veiculo/busca2?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual
+        
+       Consultar veículo por cidade, faixa de preço, ar condicional, tipo de câmbio e combustível
+                api/veiculo/busca3?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual&combustivel=gasolina
+                localhost:8080/server/api/veiculo/busca3?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual&combustivel=gasolina
+             
+       Cadastrar reserva de veiculo 
+                api/reserva
+                localhost:8080/server/api/reserva
+                Usar o verbo HTTP: <b>POST</b> e no corpo enviar o JSON com dados da reserva.
+                
                     {
                     "id": 4,
                     "data_fim": "20/12/2021",
@@ -65,15 +39,15 @@
 
                     }
 
-            </li>
+            
 
-            <li>
-                <p>Alterar reserva de veículo</p>
-                <a href="api/reserva">
+            
+       Alterar reserva de veículo
+                api/reserva
                     localhost:8080/server/api/reserva
-                    <a/>
-                    <p>Usar o verbo HTTP: <b>PUT</b> e no corpo enviar o JSON com dados que deseja alterar na reserva.</p>
-                    <p>
+                    
+                    Usar o verbo HTTP: <b>PUT</b> e no corpo enviar o JSON com dados que deseja alterar na reserva.
+                    
                         {
                         "id": 4,
                         "data_fim": "20/12/2021",
@@ -91,19 +65,12 @@
                         }  
 
                         }
-                        </li>
-                    <li>
-                        <p>
-                            Excluir reserva de veículo 
-                        </p>
-                        <p>
-                            Usar o verbo HTTP: <b>DELETE</b> enviando o ID no fim do END POINT.
-                        </p>
-                        <a href="api/reserva/4">
-                            localhost:8080/server/api/reserva/4
-                        </a>
-                    </li>
-        </ul>
-    </p>
-</body>
-</html>
+                        
+                   
+        Excluir reserva de veículo 
+                       
+                        Usar o verbo HTTP: <b>DELETE</b> enviando o ID no fim do END POINT.
+                       
+                        api/reserva/4
+                        localhost:8080/server/api/reserva/4
+                       
