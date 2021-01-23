@@ -5,8 +5,7 @@
 
 
 1. Consultar veículo por cidade, modelo e faixa de preço
-[localhost:8080/server/api/veiculo/busca1?cidade=Baixo Guandu&modelo=classic&preco_inicial=15000.0&preco_final=50000.0]
-(api/veiculo/busca1?cidade=Baixo Guandu&modelo=classic&preco_inicial=15000.0&preco_final=50000.0)
+[localhost:8080/server/api/veiculo/busca1?cidade=Baixo Guandu&modelo=classic&preco_inicial=15000.0&preco_final=50000.0](api/veiculo/busca1?cidade=Baixo Guandu&modelo=classic&preco_inicial=15000.0&preco_final=50000.0)
                 
                     
 2. Consultar veículo por cidade, faixa de preço, ar condicional e tipo de câmbio
