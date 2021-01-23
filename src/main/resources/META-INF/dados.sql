@@ -8,14 +8,7 @@
  * Created: 17 de jan de 2021
  */
 
-INSERT INTO veiculo (id, ano, ar_condicionado, cambio, combustivel, marca, modelo, placa, preco, cidade_id)
-VALUES (4, "2020", true, "manual", "gasolina", "chevrolet", "classic", "mwo 0208", 15000, 11);
 
-INSERT INTO veiculo (id, ano, ar_condicionado, cambio, combustivel, marca, modelo, placa, preco, cidade_id)
-VALUES (2, "2019", true, "automatico", "flex", "fiat", "argo", "mwo 1111", 30000, 11);
-
-INSERT INTO veiculo (id, ano, ar_condicionado, cambio, combustivel, marca, modelo, placa, preco, cidade_id)
-VALUES (3, "2021", false, "manual", "gasolina", "volks", "fusca", "mwk 5758", 100000, 12);
 
 INSERT INTO Estado (id, nome, uf) VALUES
 (1, 'Acre', 'AC'),
@@ -5613,5 +5606,27 @@ INSERT INTO Cidade (id, nome, estado_id) VALUES
 (5563, 'Wanderlândia', 27),
 (5564, 'Xambioá', 27);
 
+insert into locadora (id, nome) values (1, 'Rentacar');
+insert into locadora (id, nome) values (2, 'LocCar');
 
+insert into reserva (id, data_inicio, data_fim, valor, cidade_id) 
+values (1, '2021-12-01', '2021-12-02', 200, 9);
+
+insert into reserva (id, data_inicio, data_fim, valor, cidade_id) 
+values (2, '2021-12-01', '2021-12-02', 200, 9);
+
+insert into reserva (id, data_inicio, data_fim, valor, cidade_id) 
+values (3, '2021-11-01', '2021-11-02', 100, 8);
+
+insert into reserva (id, data_inicio, data_fim, valor, cidade_id) 
+values (4, '2021-12-01', '2021-12-04', 500, 10);
+
+INSERT INTO veiculo (id, ano, ar_condicionado, cambio, combustivel, marca, modelo, placa, preco, cidade_id)
+VALUES (4, "2020", true, "manual", "gasolina", "chevrolet", "classic", "mwo 0208", 15000, 11);
+
+INSERT INTO veiculo (id, ano, ar_condicionado, cambio, combustivel, marca, modelo, placa, preco, cidade_id)
+VALUES (2, "2019", true, "automatico", "flex", "fiat", "argo", "mwo 1111", 30000, 11);
+
+INSERT INTO veiculo (id, ano, ar_condicionado, cambio, combustivel, marca, modelo, placa, preco, cidade_id)
+VALUES (3, "2021", false, "manual", "gasolina", "volks", "fusca", "mwk 5758", 100000, 12);
 
