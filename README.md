@@ -4,16 +4,16 @@
       ## Servidor REST utilizando API REST-RS
 
 
-       **Consultar veículo por cidade, modelo e faixa de preço**
+       ** Consultar veículo por cidade, modelo e faixa de preço **
                 [localhost:8080/server/api/veiculo/busca1?cidade=Baixo Guandu&modelo=classic&preco_inicial=15000.0&preco_final=50000.0]
                 (api/veiculo/busca1?cidade=Baixo Guandu&modelo=classic&preco_inicial=15000.0&preco_final=50000.0)
                 
                     
-       **consultar veículo por cidade, faixa de preço, ar condicional e tipo de câmbio**
+       ** Consultar veículo por cidade, faixa de preço, ar condicional e tipo de câmbio **
                 api/veiculo/busca2?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual
                 localhost:8080/server/api/veiculo/busca2?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual
         
-       **Consultar veículo por cidade, faixa de preço, ar condicional, tipo de câmbio e combustível**
+       ** Consultar veículo por cidade, faixa de preço, ar condicional, tipo de câmbio e combustível **
                 api/veiculo/busca3?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual&combustivel=gasolina
                 localhost:8080/server/api/veiculo/busca3?cidade=Baixo Guandu&preco_inicial=15000.0&preco_final=50000.0&ar_condicionado=true&cambio=manual&combustivel=gasolina
              
