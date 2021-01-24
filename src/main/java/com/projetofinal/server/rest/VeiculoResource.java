@@ -6,7 +6,6 @@
 package com.projetofinal.server.rest;
 
 import com.projetofinal.server.dao.DAO;
-
 import com.projetofinal.server.model.Veiculo;
 
 import java.util.List;
@@ -75,20 +74,7 @@ public class VeiculoResource {
 
         List<Veiculo> veiculos = null;
 
-        //consultar veículo por cidade, modelo e faixa de preço
-        String jpql = "select v from Veiculo v , Cidade c where"
-                + " v.cidade.id = c.id and c.nome like :cidade"
-                + " and v.modelo like :modelo"
-                + " and v.preco between :preco_inicial and :preco_final";
-
-        TypedQuery<Veiculo> query = dao.createQuery(jpql);
-
-        query.setParameter("cidade", cidade);
-        query.setParameter("modelo", modelo);
-        query.setParameter("preco_inicial", preco_inicial);
-        query.setParameter("preco_final", preco_final);
-
-        veiculos = query.getResultList();
+        veiculos = dao.findByVeiculoBusca1(cidade, modelo, preco_inicial, preco_final);
 
         return veiculos;
 
@@ -105,22 +91,7 @@ public class VeiculoResource {
 
         List<Veiculo> veiculos = null;
 
-        //consultar veículo por cidade, faixa de preço, ar condicional e tipo de câmbio
-        String jpql = "select v from Veiculo v , Cidade c where"
-                + " v.cidade.id = c.id and c.nome like :cidade"
-                + " and v.preco between :preco_inicial and :preco_final"
-                + " and v.ar_condicionado = :ar_condicionado"
-                + " and v.cambio like :cambio";
-
-        TypedQuery<Veiculo> query = dao.createQuery(jpql);
-
-        query.setParameter("cidade", cidade);
-        query.setParameter("preco_inicial", preco_inicial);
-        query.setParameter("preco_final", preco_final);
-        query.setParameter("ar_condicionado", ar_condicionado);
-        query.setParameter("cambio", cambio);
-
-        veiculos = query.getResultList();
+        veiculos = dao.findByVeiculoBusca2(cidade, preco_inicial, preco_final, ar_condicionado, cambio);
 
         return veiculos;
 
@@ -138,24 +109,7 @@ public class VeiculoResource {
 
         List<Veiculo> veiculos = null;
 
-        //consultar veículo por cidade, faixa de preço, ar condicional, tipo de câmbio e combustível
-        String jpql = "select v from Veiculo v , Cidade c where"
-                + " v.cidade.id = c.id and c.nome like :cidade"
-                + " and v.preco between :preco_inicial and :preco_final"
-                + " and v.ar_condicionado = :ar_condicionado"
-                + " and v.cambio like :cambio"
-                + " and v.combustivel like :combustivel";
-
-        TypedQuery<Veiculo> query = dao.createQuery(jpql);
-
-        query.setParameter("cidade", cidade);
-        query.setParameter("preco_inicial", preco_inicial);
-        query.setParameter("preco_final", preco_final);
-        query.setParameter("ar_condicionado", ar_condicionado);
-        query.setParameter("cambio", cambio);
-        query.setParameter("combustivel", combustivel);
-
-        veiculos = query.getResultList();
+        veiculos = dao.findByVeiculoBusca3(cidade, preco_inicial, preco_final, ar_condicionado, cambio, combustivel);
 
         return veiculos;
 
